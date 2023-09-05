@@ -100,7 +100,3 @@ jobs:
         helm repo add my-repo https://marcdomain.github.io/demo-helm-chart/charts
 
         helm install my-repo/demo-helm-chart --set image.tag=${{ github.sha }} --generate-name
-
-        if [[ "${{ steps.check_env.outputs.environment }}" == "dev" ]]
-
-        fi
