@@ -4,8 +4,6 @@ on:
   workflow_dispatch:
   push:
     branches: [ production, main ]
-  pull_request:
-    branches: [ production, main ]
 
 env:
   AWS_REGION: 'eu-central-1'
