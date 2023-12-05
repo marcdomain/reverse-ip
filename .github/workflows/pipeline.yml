@@ -76,4 +76,4 @@ jobs:
 
         helm repo add my-repo https://marcdomain.github.io/demo-helm-chart/charts
 
-        helm install my-repo my-repo/demo-helm-chart --values k8s/values.yaml
+        helm upgrade --install my-repo my-repo/demo-helm-chart --values k8s/values.yaml
